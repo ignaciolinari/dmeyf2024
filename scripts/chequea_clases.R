@@ -1,0 +1,31 @@
+
+setwd("/Users/ignacio/MAESTRIA/DMEF")
+
+# cargo el dataset que tiene la clase calculada
+df <- read.csv("./datasets/competencia_01.csv")
+
+
+library(dplyr)
+
+
+# Realizar el conteo
+resultado <- df %>%
+  group_by(foto_mes, clase_ternaria) %>%
+  summarise(conteo = n()) %>%
+  ungroup()
+
+# Mostrar el resultado
+print(resultado)
+
+# Calcular las sumas totales
+sumas_totales <- resultado %>%
+  summarise(
+    total_baja1 = sum(conteo[clase_ternaria == "BAJA+1"], na.rm = TRUE),
+    total_baja2 = sum(conteo[clase_ternaria == "BAJA+2"], na.rm = TRUE),
+    total_continua = sum(conteo[clase_ternaria == "CONTINUA"], na.rm = TRUE),
+    total_nulls = sum(conteo[clase_ternaria == ""], na.rm = TRUE)
+  )
+
+# Mostrar las sumas totales
+print(sumas_totales)
+
