@@ -488,14 +488,14 @@ wf_SEMI_ago_b1 <- function( pnombrewf )
   DR_drifting_base(metodo="rank_cero_fijo")
   FEhist_base()
   ultimo <- FErf_attributes_base()
-  CN_canaritos_asesinos_base(ratio=0.2, desvio=0)
+  #CN_canaritos_asesinos_base(ratio=0.2, desvio=0)
 
   ts8 <- TS_strategy_base8()
 
   # la Bayesian Optimization con el semillerio dentro
   ht <- HT_tuning_semillerio(
     semillerio = 50, # semillerio dentro de la Bayesian Optim
-    bo_iteraciones = 40  # iteraciones inteligentes, apenas 10
+    bo_iteraciones = 40  # iteraciones inteligentes
   )
 
 
