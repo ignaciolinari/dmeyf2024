@@ -1,5 +1,5 @@
 
-# pip install papermill
+# %pip install papermill
 
 
 import papermill as pm
