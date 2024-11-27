@@ -5,12 +5,13 @@
 using CSV
 using DataFrames
 
+# cd(raw"/Users/ignacio/MAESTRIA/DMEF/datasets/")
 cd(raw"/home/clas_giulia_s/buckets/b1/datasets/")
 
 periodo_anterior(x::Integer) =  x % 100 > 1  ?  x-1  : 12 + (div(x,100) -1) * 100
 
 # Adjust input file name
-df = CSV.read("competencia_02_crudo.csv.gz", DataFrame)
+df = CSV.read("competencia_03_crudo.csv.gz", DataFrame)
 sort!(df, [:numero_de_cliente, :foto_mes])
 
 global periodo_ultimo = maximum(df.foto_mes)
@@ -40,4 +41,4 @@ for i in 1:last
 end
 
 # Adjust output file name
-CSV.write("competencia_02.csv.gz", df)
+CSV.write("competencia_03.csv.gz", df)

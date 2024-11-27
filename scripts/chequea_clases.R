@@ -2,7 +2,7 @@
 setwd("/Users/ignacio/MAESTRIA/DMEF")
 
 # cargo el dataset que tiene la clase calculada
-df <- read.csv("./datasets/competencia_01.csv")
+df <- read.csv("./datasets/competencia_02.csv.gz")
 
 
 library(dplyr)
