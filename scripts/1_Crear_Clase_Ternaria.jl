@@ -5,6 +5,7 @@
 using CSV
 using DataFrames
 
+# cd(raw"/Users/ignacio/MAESTRIA/DMEF/datasets/")
 cd(raw"/home/clas_giulia_s/buckets/b1/datasets/")
 
 periodo_anterior(x::Integer) =  x % 100 > 1  ?  x-1  : 12 + (div(x,100) -1) * 100
