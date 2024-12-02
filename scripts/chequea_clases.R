@@ -1,8 +1,9 @@
 
-setwd("/Users/ignacio/MAESTRIA/DMEF")
+# setwd("/Users/ignacio/MAESTRIA/DMEF")
+setwd("~/buckets/b1/datasets")
 
 # cargo el dataset que tiene la clase calculada
-df <- read.csv("./datasets/competencia_02.csv.gz")
+df <- read.csv("./competencia_03.csv.gz")
 
 
 library(dplyr)
