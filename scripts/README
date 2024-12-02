@@ -1,0 +1,13 @@
+INSTRUCCIONES PARA CORRER EXPERIMENTO COLABORATIVO
+
+Simplemente se sigue el orden de los scripts.
+
+Hay 2 para crear la clase ternaria, dado que localmente tengo un bug (que no logro identificar) en enero al hacerlo con SQL. A otros les funciona bien. (por eso esta la version con Julia, con la cual no tengo problema).
+
+En 4_Optimizacion sucede la bifurcacion, cambiar los modelos en base al learning rate.
+
+Correr los siguientes scripts por duplicado (variando el modelo) hasta el 8
+
+Finalmente en el script 9 se comparan los resultados.
+
+Los que no estan numerados son miscelaneos
