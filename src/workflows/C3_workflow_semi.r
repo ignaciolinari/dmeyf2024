@@ -305,7 +305,7 @@ TS_strategy_base8 <- function( pinputexps )
     # 201910 Excluyo por variables rotas
     201909, 201908, 201907, 201906,
     # 201905  Excluyo por variables rotas
-    201904, 201903
+    201904, 201903, 201902, 201901
   )
 
 
@@ -321,7 +321,7 @@ TS_strategy_base8 <- function( pinputexps )
     # 201910 Excluyo por variables rotas
     201909, 201908, 201907, 201906,
     # 201905  Excluyo por variables rotas
-    201904, 201903
+    201904, 201903, 201902, 201901
   )
 
 
@@ -471,7 +471,7 @@ KA_evaluate_kaggle_semillerio <- function( pinputexps )
 # A partir de ahora comienza la seccion de Workflows Completos
 #------------------------------------------------------------------------------
 # Este es el  Workflow Baseline
-# Que predice 202107 donde conozco la clase
+# Que predice 202108 donde conozco la clase
 # y ya genera graficos
 
 wf_SEMI_sept_c3 <- function( pnombrewf )
