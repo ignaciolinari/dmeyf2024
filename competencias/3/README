@@ -1,0 +1,23 @@
+1 Crea clase Ternaria
+
+2 Corre workflow (primero a luego b, c y finalmente d)
+
+De los distintos workflows se toman las siguientes predicciones de Kaggle:
+
+De 2a, se toma el corte en 10500
+KA-0003_01_006_r1_10500.csv
+
+de 2b se toma el corte en 10500
+KA-0004_01_006_r1_10500.csv
+
+de 2c se toman de r1 el corte en 10500
+KA-0005_01_006_r1_10500.csv
+
+de r2 el corte en 9500
+KA-0005_01_006_r2_09500.csv
+
+y de 2d se toma el corte en 9500
+KA-0006_01_006_r1_09500.csv
+
+3 Finalmente se corre el majority voting del cual sale la prediccion final para Kaggle
+
